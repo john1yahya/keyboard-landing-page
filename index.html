@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Keychron - Premium Wireless Mechanical Keyboards for Mac, Windows and Android.">
+    <title>Keychron | The Ultimate Mechanical Keyboard</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 1. Navigation -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Keychron</a>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#keyboards" class="nav-link">Keyboards</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#accessories" class="nav-link">Accessories</a></li>
+                <li><a href="#support" class="nav-link">Support</a></li>
+            </ul>
+
+            <div class="nav-icons" style="display: flex; gap: 1rem; display: none;">
+                <!-- Hidden on mobile for simplicity, can reveal on desktop if needed -->
+                <!-- Shopping cart, user profile could go here in a real app -->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. Hero Section (Real Image) -->
+        <section class="hero" id="hero">
+            <div class="container hero-content">
+                <div class="hero-text fade-in-up">
+                    <span class="hero-tag">New Release</span>
+                    <h1 class="hero-title">Custom<br>Redefined.</h1>
+                    <p class="hero-subtitle">
+                        Meet the all-new Keychron Q1 Pro. A fully customizable 75% layout mechanical keyboard with
+                        QMK/VIA support, full aluminum body, and wireless connectivity.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#shop" class="btn btn-accent">Shop Q1 Pro</a>
+                        <a href="#features" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="hero-image-container fade-in-up" data-delay="0.2s">
+                    <!-- Real generated hero image -->
+                    <img src="assets/keychron_hero_1772235866190.png" alt="Keychron Q1 Pro Custom Mechanical Keyboard"
+                        class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. General Features -->
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">Engineered for workflow.</h2>
+                    <p class="section-subtitle">We design our keyboards to be highly customizable from the ground up to
+                        fit your exact typing needs.</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-item fade-in-up">
+                        <div class="feature-icon"><i data-lucide="monitor" size="28"></i></div>
+                        <h3>Mac & Windows</h3>
+                        <p>Fully compatible with Mac, Windows, and Linux. Includes keycaps for both operating systems.
+                        </p>
+                    </div>
+
+                    <div class="feature-item fade-in-up" data-delay="0.1s">
+                        <div class="feature-icon"><i data-lucide="wifi" size="28"></i></div>
+                        <h3>Wireless & Wired</h3>
+                        <p>Connect up to 3 devices via Bluetooth 5.1 and switch seamlessly, or use the Type-C wired
+                            connection.</p>
+                    </div>
+
+                    <div class="feature-item fade-in-up" data-delay="0.2s">
+                        <div class="feature-icon"><i data-lucide="settings" size="28"></i></div>
+                        <h3>QMK & VIA Support</h3>
+                        <p>Program and remap any key or create macro commands with ease using VIA software.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Products Grid -->
+        <section class="products" id="keyboards">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">Find your perfect board.</h2>
+                    <p class="section-subtitle">From heavy CNC aluminum custom boards to sleek low-profile wireless
+                        setups.</p>
+                </div>
+
+                <div class="product-grid">
+                    <!-- Q Series -->
+                    <div class="product-card fade-in-up">
+                        <div class="product-image-wrap">
+                            <img src="assets/keychron_q_series_1772235887134.png" alt="Keychron Q Series">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-series">Q Series</span>
+                            <h3>Custom Aluminum</h3>
+                            <p>Full metal body, gasket mount design, and premium typing acoustics for enthusiasts.</p>
+                            <div class="product-price">
+                                <span class="price">From $159</span>
+                                <a href="#" class="btn btn-primary" style="padding: 0.5rem 1rem;">Shop</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- K Series -->
+                    <div class="product-card fade-in-up" data-delay="0.1s">
+                        <div class="product-image-wrap">
+                            <img src="assets/keychron_k_series_1772235900566.png" alt="Keychron K Series Low Profile">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-series">K Series Low Profile</span>
+                            <h3>Sleek & Wireless</h3>
+                            <p>Ultra-slim design without compromising on the tactile feel of a mechanical keyboard.</p>
+                            <div class="product-price">
+                                <span class="price">From $89</span>
+                                <a href="#" class="btn btn-primary" style="padding: 0.5rem 1rem;">Shop</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- V Series -->
+                    <div class="product-card fade-in-up" data-delay="0.2s">
+                        <div class="product-image-wrap">
+                            <img src="assets/keychron_v_series_1772235913667.png" alt="Keychron V Series">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-series">V Series</span>
+                            <h3>Custom Classic</h3>
+                            <p>Translucent plastic casing, QMK/VIA support, and vibrant south-facing RGB.</p>
+                            <div class="product-price">
+                                <span class="price">From $79</span>
+                                <a href="#" class="btn btn-primary" style="padding: 0.5rem 1rem;">Shop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Spotlight -->
+        <section class="spotlight" id="shop">
+            <div class="container spotlight-content">
+                <div class="spotlight-img-wrapper fade-in-up">
+                    <img src="assets/keychron_hero_1772235866190.png" alt="Q1 Pro Layout" class="spotlight-img">
+                </div>
+
+                <div class="spotlight-info fade-in-up" data-delay="0.2s">
+                    <span class="product-series" style="color: var(--color-accent); font-weight: bold;">Q1 Pro</span>
+                    <h2>The quintessential 75% custom keyboard.</h2>
+                    <p>Designed for the ultimate typing experience right out of the box, with hot-swappable switches, a
+                        CNC machined aluminum body, and double-gasket design.</p>
+
+                    <ul class="specs-list">
+                        <li><i data-lucide="check-circle-2"></i> Hot-swappable K Pro mechanical switches</li>
+                        <li><i data-lucide="check-circle-2"></i> Sound absorbing foam and silicone pads</li>
+                        <li><i data-lucide="check-circle-2"></i> Programmable rotary knob</li>
+                    </ul>
+
+                    <div style="display: flex; align-items: center; gap: 2rem; margin-top: 2rem;">
+                        <span style="font-size: 2rem; font-weight: 700;">$219</span>
+                        <a href="#" class="btn btn-accent">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 6. Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">Keychron</a>
+                <p>Building the most versatile custom mechanical keyboards for programmers, gamers, and typing
+                    enthusiasts.</p>
+                <div class="socials">
+                    <a href="#"><i data-lucide="twitter"></i></a>
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                    <a href="#"><i data-lucide="facebook"></i></a>
+                    <a href="#"><i data-lucide="youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Keyboards</h4>
+                <ul>
+                    <li><a href="#">Q Series (Custom Aluminum)</a></li>
+                    <li><a href="#">V Series (Custom Classic)</a></li>
+                    <li><a href="#">K Series (Wireless Mechanical)</a></li>
+                    <li><a href="#">K Pro Series</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Accessories</h4>
+                <ul>
+                    <li><a href="#">Keycap Sets</a></li>
+                    <li><a href="#">Switches</a></li>
+                    <li><a href="#">Desk Mats</a></li>
+                    <li><a href="#">Cables & Cases</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Firmware Downloads</a></li>
+                    <li><a href="#">User Manuals</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span id="year"></span> Keychron. Developed for display purposes.</p>
+            <div style="display: flex; gap: 1rem;">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Icons -->
+    <script>
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Custom Logic -->
+    <script src="script.js"></script>
+</body>
+
+</html>
