@@ -4,6 +4,8 @@ A premium, highly-responsive e-commerce landing page redesign for Keychron Custo
 
 Built as a front-end showcase focusing on clean tech aesthetics, fluid CSS grid layouts, and minimalist product presentations. 
 
+[Demo Live](https://john1yahya.github.io/keyboard-landing-page/)
+
 ## Features
 - **Clean E-commerce Aesthetic**: Employs a bright, off-white/grey color palette with deep dark backgrounds and Keychron's signature orange accents to highlight products effectively.
 - **Responsive Layouts**: Designed to be fully responsive using CSS Grid and Flexbox, breaking perfectly on tablets and mobile devices.
