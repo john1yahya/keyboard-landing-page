@@ -74,4 +74,69 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 2500);
         });
     });
+
+    // 4. Style Selector Logic
+    const styleDots = document.querySelectorAll('.style-dot');
+    const mainProductImg = document.getElementById('mainProductImg');
+
+    styleDots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            // Update active state
+            styleDots.forEach(d => d.classList.remove('active'));
+            dot.classList.add('active');
+
+            // Swap Image (simulation since we only have two variants)
+            const color = dot.getAttribute('data-color');
+            if (color === 'silver') {
+                mainProductImg.src = 'assets/keychron_q1_silver.png';
+            } else {
+                mainProductImg.src = 'assets/keychron_hero_1772235866190.png'; // Carbon Black
+            }
+        });
+    });
+
+    // 5. Accordion Logic
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const item = header.parentElement;
+            const isActive = item.classList.contains('active');
+
+            // Close all first (optional, for accordion effect)
+            document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
+
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        });
+    });
+
+    // 6. Sound Test Simulation
+    const soundBtns = document.querySelectorAll('.sound-btn');
+    soundBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const isPlaying = btn.classList.contains('playing');
+
+            // Reset others
+            soundBtns.forEach(b => {
+                b.classList.remove('playing');
+                const icon = b.querySelector('i');
+                icon.setAttribute('data-lucide', 'play');
+            });
+
+            if (!isPlaying) {
+                btn.classList.add('playing');
+                const icon = btn.querySelector('i');
+                icon.setAttribute('data-lucide', 'pause');
+
+                // Simulate audio duration
+                setTimeout(() => {
+                    btn.classList.remove('playing');
+                    icon.setAttribute('data-lucide', 'play');
+                    lucide.createIcons();
+                }, 3000);
+            }
+            lucide.createIcons();
+        });
+    });
 });

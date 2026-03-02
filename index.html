@@ -72,6 +72,42 @@
             </div>
         </section>
 
+        <!-- 2.1 Anatomy Section (Exploded View) -->
+        <section class="anatomy" id="anatomy">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">Built from the inside out.</h2>
+                    <p class="section-subtitle">A multi-layered design focused on acoustic perfection and structural
+                        rigidity.</p>
+                </div>
+
+                <div class="anatomy-grid">
+                    <div class="anatomy-image fade-in-up">
+                        <img src="assets/keyboard_anatomy.png" alt="Exploded view of Q1 Pro">
+                    </div>
+                    <div class="anatomy-info fade-in-up" data-delay="0.2s">
+                        <div class="anatomy-card">
+                            <span class="anatomy-number">01</span>
+                            <h4>CNC Aluminum Body</h4>
+                            <p>Crafted with 6063 aluminum, processed through CNC machining, polishing, and anodizing.
+                            </p>
+                        </div>
+                        <div class="anatomy-card">
+                            <span class="anatomy-number">02</span>
+                            <h4>Double-Gasket Design</h4>
+                            <p>Significantly reduces sound resonance and increases typing flexibility.</p>
+                        </div>
+                        <div class="anatomy-card">
+                            <span class="anatomy-number">03</span>
+                            <h4>Acoustic Foam</h4>
+                            <p>Premium Poron foam and sound-absorbing silicone pads for a deeper, 'thocky' sound
+                                profile.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- 3. General Features -->
         <section class="features" id="features">
             <div class="container">
@@ -100,6 +136,41 @@
                         <div class="feature-icon"><i data-lucide="settings" size="28"></i></div>
                         <h3>QMK & VIA Support</h3>
                         <p>Program and remap any key or create macro commands with ease using VIA software.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3.1 Sound Test Section -->
+        <section class="sound-test" id="sound-test">
+            <div class="container">
+                <div class="sound-test-inner fade-in-up">
+                    <div class="sound-test-text">
+                        <h2 class="section-title">Hear the difference.</h2>
+                        <p>Every keystroke is tuned for acoustics. Listen to our signature switch options.</p>
+                    </div>
+                    <div class="sound-controls">
+                        <div class="sound-btn" data-switch="linear">
+                            <div class="play-icon"><i data-lucide="play"></i></div>
+                            <div class="btn-label">
+                                <strong>K Pro Red</strong>
+                                <span>Quiet & Linear</span>
+                            </div>
+                        </div>
+                        <div class="sound-btn" data-switch="tactile">
+                            <div class="play-icon"><i data-lucide="play"></i></div>
+                            <div class="btn-label">
+                                <strong>K Pro Brown</strong>
+                                <span>Tactile & Balanced</span>
+                            </div>
+                        </div>
+                        <div class="sound-btn" data-switch="clicky">
+                            <div class="play-icon"><i data-lucide="play"></i></div>
+                            <div class="btn-label">
+                                <strong>K Pro Blue</strong>
+                                <span>Crisp & Clicky</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -166,28 +237,182 @@
             </div>
         </section>
 
-        <!-- 5. Spotlight -->
+        <!-- 4.1 Comparison Table -->
+        <section class="comparison" id="comparison">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">Compare Series.</h2>
+                    <p class="section-subtitle">Choose the board that fits your journey.</p>
+                </div>
+
+                <div class="comparison-table-wrapper fade-in-up">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Q Series</th>
+                                <th>V Series</th>
+                                <th>K Series</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Body Material</td>
+                                <td>Full CNC Aluminum</td>
+                                <td>ABS Plastic</td>
+                                <td>Aluminum Frame / ABS</td>
+                            </tr>
+                            <tr>
+                                <td>Mount Design</td>
+                                <td>Double-Gasket</td>
+                                <td>Tray Mount</td>
+                                <td>Tray Mount</td>
+                            </tr>
+                            <tr>
+                                <td>QMK / VIA</td>
+                                <td><i data-lucide="check" class="text-accent"></i></td>
+                                <td><i data-lucide="check" class="text-accent"></i></td>
+                                <td>Select Models</td>
+                            </tr>
+                            <tr>
+                                <td>Connectivity</td>
+                                <td>Wired / Wireless (Pro)</td>
+                                <td>Wired</td>
+                                <td>Wired / Wireless</td>
+                            </tr>
+                            <tr>
+                                <td>Price Range</td>
+                                <td>$149 - $219</td>
+                                <td>$74 - $99</td>
+                                <td>$69 - $119</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Spotlight (Upgraded with Style Selector & Specs) -->
         <section class="spotlight" id="shop">
             <div class="container spotlight-content">
                 <div class="spotlight-img-wrapper fade-in-up">
-                    <img src="assets/keychron_hero_1772235866190.png" alt="Q1 Pro Layout" class="spotlight-img">
+                    <img src="assets/keychron_hero_1772235866190.png" alt="Q1 Pro Layout" class="spotlight-img"
+                        id="mainProductImg">
+
+                    <div class="style-selector">
+                        <button class="style-dot active" data-color="carbon" style="background: #1a1a1a;"
+                            title="Carbon Black"></button>
+                        <button class="style-dot" data-color="silver" style="background: #c0c0c0;"
+                            title="Silver Grey"></button>
+                    </div>
                 </div>
 
                 <div class="spotlight-info fade-in-up" data-delay="0.2s">
                     <span class="product-series" style="color: var(--color-accent); font-weight: bold;">Q1 Pro</span>
-                    <h2>The quintessential 75% custom keyboard.</h2>
+                    <h2 id="productTitle">The quintessential 75% custom keyboard.</h2>
                     <p>Designed for the ultimate typing experience right out of the box, with hot-swappable switches, a
                         CNC machined aluminum body, and double-gasket design.</p>
 
-                    <ul class="specs-list">
-                        <li><i data-lucide="check-circle-2"></i> Hot-swappable K Pro mechanical switches</li>
-                        <li><i data-lucide="check-circle-2"></i> Sound absorbing foam and silicone pads</li>
-                        <li><i data-lucide="check-circle-2"></i> Programmable rotary knob</li>
-                    </ul>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <span>Key Features</span>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <ul class="specs-list">
+                                    <li><i data-lucide="check-circle-2"></i> Hot-swappable K Pro mechanical switches
+                                    </li>
+                                    <li><i data-lucide="check-circle-2"></i> Sound absorbing foam and silicone pads</li>
+                                    <li><i data-lucide="check-circle-2"></i> Programmable rotary knob</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <span>Technical Specifications</span>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <table class="specs-table">
+                                    <tr>
+                                        <td>Width</td>
+                                        <td>145 mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Length</td>
+                                        <td>327.5 mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Weight</td>
+                                        <td>1736 g ± 10 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Polling Rate</td>
+                                        <td>1000 Hz</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Battery</td>
+                                        <td>4000 mAh</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
 
                     <div style="display: flex; align-items: center; gap: 2rem; margin-top: 2rem;">
                         <span style="font-size: 2rem; font-weight: 700;">$219</span>
                         <a href="#" class="btn btn-accent">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5.1 Testimonials (Social Proof) -->
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">Trusted by enthusiasts.</h2>
+                </div>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card fade-in-up">
+                        <div class="testimonial-content">
+                            <p>"The build quality is insane. The weight alone makes it feel like it belongs on a
+                                professional's desk. The Q1 Pro changed how I code."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/150?u=techy" alt="User">
+                            <div>
+                                <strong>Alex Rivera</strong>
+                                <span>Full Stack Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card fade-in-up" data-delay="0.1s">
+                        <div class="testimonial-content">
+                            <p>"Finally, a keyboard that supports Mac natively with such high-end features. The sound
+                                dampening is perfect."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/150?u=design" alt="User">
+                            <div>
+                                <strong>Sarah Chen</strong>
+                                <span>UI/UX Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card fade-in-up" data-delay="0.2s">
+                        <div class="testimonial-content">
+                            <p>"VIA support is a game changer. I've remapped everything for my workflow. Best investment
+                                in years."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/150?u=gamer" alt="User">
+                            <div>
+                                <strong>Marcus Thorne</strong>
+                                <span>Content Creator</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
