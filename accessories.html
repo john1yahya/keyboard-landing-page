@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Keychron accessories — keycap sets, switches, desk mats, cables, and more.">
+    <title>Keychron | Accessories</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Keychron</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="keyboards.html" class="nav-link">Keyboards</a></li>
+                <li><a href="index.html#features" class="nav-link">Features</a></li>
+                <li><a href="accessories.html" class="nav-link">Accessories</a></li>
+                <li><a href="support.html" class="nav-link">Support</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-icon-btn" id="cartBtn" aria-label="Open cart">
+                    <i data-lucide="shopping-bag"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- PAGE HERO -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="fade-in-up">Accessories.</h1>
+                <p class="fade-in-up" data-delay="0.1s">Elevate your setup with premium keycaps, switches, desk mats,
+                    and more.</p>
+            </div>
+        </section>
+
+        <!-- ACCESSORIES GRID -->
+        <section class="page-section">
+            <div class="container">
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="keycaps">Keycap Sets</button>
+                    <button class="filter-btn" data-filter="switches">Switches</button>
+                    <button class="filter-btn" data-filter="deskmats">Desk Mats</button>
+                    <button class="filter-btn" data-filter="cables">Cables &amp; Cases</button>
+                </div>
+
+                <div class="product-grid">
+
+                    <!-- OSA PBT Keycap Set -->
+                    <div class="product-card fade-in-up" data-series="keycaps">
+                        <div class="product-image-wrap" style="background:#e2e8f0;">
+                            <img src="assets/keychron_q_series_1772235887134.png" alt="OSA Double-Shot PBT Keycap Set">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-series">Keycap Sets</span>
+                            <h3>OSA Double-Shot PBT</h3>
+                            <p>Full-size OSA profile PBT keycaps. Mac &amp; Windows layout. 189 keys.</p>
+                            <div class="product-price">
+                                <span class="price">$49</span>
+                                <button class="btn btn-primary btn-sm" data-product-id="osa-pbt"
+                                    data-product-name="OSA Double-Shot PBT Keycaps" data-product-price="49">Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gateron G Pro 3.0 Switches -->
+                    <div class="product-card fade-in-up" data-delay="0.05s" data-series="switches">
+                        <div class="product-image-wrap" style="background:#fff0e0;">
+                            <img src="assets/keychron_v_series_1772235913667.png" alt="Gateron G Pro 3.0 Red Switches">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-series">Switches</span>
+                            <h3>Gateron G Pro 3.0</h3>
+                            <p>45g linear switches with factory pre-lubed stems. Pack of 35.</p>
+                            <div class="product-price">
+                                <span class="price">$15</span>
+                                <button class="btn btn-primary btn-sm" data-product-id="gateron-g-pro-red"
+                                    data-product-name="Gateron G Pro 3.0 Red (35pk)" data-product-price="15">Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Keychron Desk Mat (XL) -->
+                    <div class="product-card fade-in-up" data-delay="0.1s" data-series="deskmats">
+                        <div class="product-image-wrap" style="background:#1a1a1a;">
+                            <img src="assets/keychron_hero_1772235866190.png" alt="Keychron XL Desk Mat">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-series">Desk Mats</span>
+                            <h3>XL Desk Mat</h3>
+                            <p>900 × 400mm extended desk mat. Non-slip rubber base. Stitched edges.</p>
+                            <div class="product-price">
+                                <span class="price">$29</span>
+                                <button class="btn btn-primary btn-sm" data-product-id="desk-mat-xl"
+                                    data-product-name="XL Desk Mat" data-product-price="29">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coiled Cable -->
+                    <div class="product-card fade-in-up" data-delay="0.05s" data-series="cables">
+                        <div class="product-image-wrap" style="background:#f0f0f0;">
+                            <img src="assets/keychron_k_series_1772235900566.png" alt="Custom Coiled USB-C Cable">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-series">Cables &amp; Cases</span>
+                            <h3>Custom Coiled Cable</h3>
+                            <p>Custom coiled USB-C cable with MDPC-X sleeving. Multiple colour options.</p>
+                            <div class="product-price">
+                                <span class="price">$35</span>
+                                <button class="btn btn-primary btn-sm" data-product-id="coiled-cable"
+                                    data-product-name="Custom Coiled Cable" data-product-price="35">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Keychron Carrying Case -->
+                    <div class="product-card fade-in-up" data-delay="0.1s" data-series="cables">
+                        <div class="product-image-wrap" style="background:#e8e8e8;">
+                            <img src="assets/keychron_q_series_1772235887134.png" alt="Keychron Carrying Case">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-series">Cables &amp; Cases</span>
+                            <h3>Hard Carry Case</h3>
+                            <p>Water-resistant EVA hard case designed for Q1 / Q2 keyboards. Fits all accessories.</p>
+                            <div class="product-price">
+                                <span class="price">$39</span>
+                                <button class="btn btn-primary btn-sm" data-product-id="carry-case"
+                                    data-product-name="Hard Carry Case" data-product-price="39">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- K Pro Brown Switches -->
+                    <div class="product-card fade-in-up" data-delay="0.15s" data-series="switches">
+                        <div class="product-image-wrap" style="background:#fff5eb;">
+                            <img src="assets/keychron_v_series_1772235913667.png" alt="Keychron K Pro Brown Switches">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-series">Switches</span>
+                            <h3>K Pro Brown Switches</h3>
+                            <p>Smooth tactile switches with sound-absorbing silicone. Pack of 35.</p>
+                            <div class="product-price">
+                                <span class="price">$17</span>
+                                <button class="btn btn-primary btn-sm" data-product-id="k-pro-brown"
+                                    data-product-name="K Pro Brown Switches (35pk)" data-product-price="17">Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Keychron</a>
+                <p>Building the most versatile custom mechanical keyboards for programmers, gamers, and enthusiasts.</p>
+                <div class="socials">
+                    <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Keyboards</h4>
+                <ul>
+                    <li><a href="keyboards.html">Q Series</a></li>
+                    <li><a href="keyboards.html">V Series</a></li>
+                    <li><a href="keyboards.html">K Series</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Accessories</h4>
+                <ul>
+                    <li><a href="accessories.html">Keycap Sets</a></li>
+                    <li><a href="accessories.html">Switches</a></li>
+                    <li><a href="accessories.html">Desk Mats</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="support.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span id="year"></span> Keychron. Developed for display purposes.</p>
+            <div class="footer-legal">
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CART DRAWER -->
+    <div class="cart-overlay" id="cartOverlay" aria-hidden="true"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="cart-close-btn" id="cartCloseBtn" aria-label="Close cart"><i data-lucide="x"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer" id="cartFooter" style="display:none;">
+            <div class="cart-subtotal"><span>Subtotal</span><span id="cartSubtotal">$0</span></div>
+            <button class="btn btn-accent" style="width:100%;">Checkout</button>
+            <p class="cart-note">Shipping &amp; taxes calculated at checkout.</p>
+        </div>
+    </aside>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

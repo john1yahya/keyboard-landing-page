@@ -7,48 +7,46 @@
     <meta name="description" content="Keychron - Premium Wireless Mechanical Keyboards for Mac, Windows and Android.">
     <title>Keychron | The Ultimate Mechanical Keyboard</title>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-
-    <!-- Icons (Lucide) -->
     <script src="https://unpkg.com/lucide@latest"></script>
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- 1. Navigation -->
+    <!-- ===================== NAVIGATION ===================== -->
     <header class="header" id="header">
         <div class="container nav-container">
-            <a href="#" class="logo">Keychron</a>
-
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <a href="index.html" class="logo">Keychron</a>
 
             <ul class="nav-links" id="navLinks">
-                <li><a href="#keyboards" class="nav-link">Keyboards</a></li>
-                <li><a href="#features" class="nav-link">Features</a></li>
-                <li><a href="#accessories" class="nav-link">Accessories</a></li>
-                <li><a href="#support" class="nav-link">Support</a></li>
+                <li><a href="keyboards.html" class="nav-link">Keyboards</a></li>
+                <li><a href="index.html#features" class="nav-link">Features</a></li>
+                <li><a href="accessories.html" class="nav-link">Accessories</a></li>
+                <li><a href="support.html" class="nav-link">Support</a></li>
             </ul>
 
-            <div class="nav-icons" style="display: flex; gap: 1rem; display: none;">
-                <!-- Hidden on mobile for simplicity, can reveal on desktop if needed -->
-                <!-- Shopping cart, user profile could go here in a real app -->
+            <div class="nav-actions">
+                <button class="cart-icon-btn" id="cartBtn" aria-label="Open cart">
+                    <i data-lucide="shopping-bag"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>
 
+    <!-- ===================== MAIN CONTENT ===================== -->
     <main>
-        <!-- 2. Hero Section (Real Image) -->
+
+        <!-- HERO SECTION -->
         <section class="hero" id="hero">
             <div class="container hero-content">
                 <div class="hero-text fade-in-up">
@@ -59,20 +57,18 @@
                         QMK/VIA support, full aluminum body, and wireless connectivity.
                     </p>
                     <div class="hero-actions">
-                        <a href="#shop" class="btn btn-accent">Shop Q1 Pro</a>
+                        <a href="keyboards.html" class="btn btn-accent">Shop Q1 Pro</a>
                         <a href="#features" class="btn btn-secondary">Learn More</a>
                     </div>
                 </div>
-
                 <div class="hero-image-container fade-in-up" data-delay="0.2s">
-                    <!-- Real generated hero image -->
                     <img src="assets/keychron_hero_1772235866190.png" alt="Keychron Q1 Pro Custom Mechanical Keyboard"
                         class="hero-img">
                 </div>
             </div>
         </section>
 
-        <!-- 2.1 Anatomy Section (Exploded View) -->
+        <!-- ANATOMY SECTION -->
         <section class="anatomy" id="anatomy">
             <div class="container">
                 <div class="section-header fade-in-up">
@@ -80,10 +76,9 @@
                     <p class="section-subtitle">A multi-layered design focused on acoustic perfection and structural
                         rigidity.</p>
                 </div>
-
                 <div class="anatomy-grid">
                     <div class="anatomy-image fade-in-up">
-                        <img src="assets/keyboard_anatomy.png" alt="Exploded view of Q1 Pro">
+                        <img src="assets/keyboard_anatomy.png" alt="Exploded view of Q1 Pro keyboard layers">
                     </div>
                     <div class="anatomy-info fade-in-up" data-delay="0.2s">
                         <div class="anatomy-card">
@@ -95,88 +90,86 @@
                         <div class="anatomy-card">
                             <span class="anatomy-number">02</span>
                             <h4>Double-Gasket Design</h4>
-                            <p>Significantly reduces sound resonance and increases typing flexibility.</p>
+                            <p>Significantly reduces sound resonance and increases typing flexibility for a premium
+                                feel.</p>
                         </div>
                         <div class="anatomy-card">
                             <span class="anatomy-number">03</span>
-                            <h4>Acoustic Foam</h4>
-                            <p>Premium Poron foam and sound-absorbing silicone pads for a deeper, 'thocky' sound
-                                profile.</p>
+                            <h4>Acoustic Foam Layers</h4>
+                            <p>Premium Poron foam and silicone pads that deliver a deep, satisfying 'thocky' sound.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 3. General Features -->
+        <!-- FEATURES SECTION -->
         <section class="features" id="features">
             <div class="container">
                 <div class="section-header fade-in-up">
                     <h2 class="section-title">Engineered for workflow.</h2>
-                    <p class="section-subtitle">We design our keyboards to be highly customizable from the ground up to
-                        fit your exact typing needs.</p>
+                    <p class="section-subtitle">Designed to be highly customizable from the ground up to fit your exact
+                        typing needs.</p>
                 </div>
-
                 <div class="features-grid">
                     <div class="feature-item fade-in-up">
                         <div class="feature-icon"><i data-lucide="monitor" size="28"></i></div>
-                        <h3>Mac & Windows</h3>
-                        <p>Fully compatible with Mac, Windows, and Linux. Includes keycaps for both operating systems.
+                        <h3>Mac &amp; Windows</h3>
+                        <p>Fully compatible with Mac, Windows, and Linux. Includes keycaps for all operating systems.
                         </p>
                     </div>
-
                     <div class="feature-item fade-in-up" data-delay="0.1s">
                         <div class="feature-icon"><i data-lucide="wifi" size="28"></i></div>
-                        <h3>Wireless & Wired</h3>
-                        <p>Connect up to 3 devices via Bluetooth 5.1 and switch seamlessly, or use the Type-C wired
-                            connection.</p>
+                        <h3>Wireless &amp; Wired</h3>
+                        <p>Connect up to 3 devices via Bluetooth 5.1, or use the USB-C wired connection.</p>
                     </div>
-
                     <div class="feature-item fade-in-up" data-delay="0.2s">
                         <div class="feature-icon"><i data-lucide="settings" size="28"></i></div>
-                        <h3>QMK & VIA Support</h3>
-                        <p>Program and remap any key or create macro commands with ease using VIA software.</p>
+                        <h3>QMK &amp; VIA</h3>
+                        <p>Remap any key and create powerful macro commands using the free VIA software.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 3.1 Sound Test Section -->
+        <!-- SOUND TEST SECTION -->
         <section class="sound-test" id="sound-test">
             <div class="container">
                 <div class="sound-test-inner fade-in-up">
                     <div class="sound-test-text">
-                        <h2 class="section-title">Hear the difference.</h2>
-                        <p>Every keystroke is tuned for acoustics. Listen to our signature switch options.</p>
+                        <h2 class="section-title" style="color: #fff;">Hear the difference.</h2>
+                        <p>Every keystroke is tuned for acoustics. Click a switch below to experience its sound profile.
+                        </p>
                     </div>
                     <div class="sound-controls">
-                        <div class="sound-btn" data-switch="linear">
-                            <div class="play-icon"><i data-lucide="play"></i></div>
+                        <button class="sound-btn" data-switch="linear" aria-label="Play K Pro Red linear switch sound">
+                            <div class="play-icon"><i data-lucide="volume-2"></i></div>
                             <div class="btn-label">
                                 <strong>K Pro Red</strong>
-                                <span>Quiet & Linear</span>
+                                <span>Quiet &amp; Linear</span>
                             </div>
-                        </div>
-                        <div class="sound-btn" data-switch="tactile">
-                            <div class="play-icon"><i data-lucide="play"></i></div>
+                        </button>
+                        <button class="sound-btn" data-switch="tactile"
+                            aria-label="Play K Pro Brown tactile switch sound">
+                            <div class="play-icon"><i data-lucide="volume-2"></i></div>
                             <div class="btn-label">
                                 <strong>K Pro Brown</strong>
-                                <span>Tactile & Balanced</span>
+                                <span>Tactile &amp; Balanced</span>
                             </div>
-                        </div>
-                        <div class="sound-btn" data-switch="clicky">
-                            <div class="play-icon"><i data-lucide="play"></i></div>
+                        </button>
+                        <button class="sound-btn" data-switch="clicky" aria-label="Play K Pro Blue clicky switch sound">
+                            <div class="play-icon"><i data-lucide="volume-2"></i></div>
                             <div class="btn-label">
                                 <strong>K Pro Blue</strong>
-                                <span>Crisp & Clicky</span>
+                                <span>Crisp &amp; Clicky</span>
                             </div>
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 4. Products Grid -->
+        <!-- PRODUCTS SECTION -->
         <section class="products" id="keyboards">
             <div class="container">
                 <div class="section-header fade-in-up">
@@ -184,12 +177,11 @@
                     <p class="section-subtitle">From heavy CNC aluminum custom boards to sleek low-profile wireless
                         setups.</p>
                 </div>
-
                 <div class="product-grid">
-                    <!-- Q Series -->
                     <div class="product-card fade-in-up">
                         <div class="product-image-wrap">
-                            <img src="assets/keychron_q_series_1772235887134.png" alt="Keychron Q Series">
+                            <img src="assets/keychron_q_series_1772235887134.png"
+                                alt="Keychron Q Series custom aluminum keyboard">
                         </div>
                         <div class="product-info">
                             <span class="product-series">Q Series</span>
@@ -197,39 +189,41 @@
                             <p>Full metal body, gasket mount design, and premium typing acoustics for enthusiasts.</p>
                             <div class="product-price">
                                 <span class="price">From $159</span>
-                                <a href="#" class="btn btn-primary" style="padding: 0.5rem 1rem;">Shop</a>
+                                <button class="btn btn-primary btn-sm" data-product-id="q-series"
+                                    data-product-name="Q Series Keyboard" data-product-price="159">Add to Cart</button>
                             </div>
                         </div>
                     </div>
-
-                    <!-- K Series -->
                     <div class="product-card fade-in-up" data-delay="0.1s">
                         <div class="product-image-wrap">
-                            <img src="assets/keychron_k_series_1772235900566.png" alt="Keychron K Series Low Profile">
+                            <img src="assets/keychron_k_series_1772235900566.png"
+                                alt="Keychron K Series low profile wireless keyboard">
                         </div>
                         <div class="product-info">
                             <span class="product-series">K Series Low Profile</span>
-                            <h3>Sleek & Wireless</h3>
+                            <h3>Sleek &amp; Wireless</h3>
                             <p>Ultra-slim design without compromising on the tactile feel of a mechanical keyboard.</p>
                             <div class="product-price">
                                 <span class="price">From $89</span>
-                                <a href="#" class="btn btn-primary" style="padding: 0.5rem 1rem;">Shop</a>
+                                <button class="btn btn-primary btn-sm" data-product-id="k-series"
+                                    data-product-name="K Series Low Profile" data-product-price="89">Add to
+                                    Cart</button>
                             </div>
                         </div>
                     </div>
-
-                    <!-- V Series -->
                     <div class="product-card fade-in-up" data-delay="0.2s">
                         <div class="product-image-wrap">
-                            <img src="assets/keychron_v_series_1772235913667.png" alt="Keychron V Series">
+                            <img src="assets/keychron_v_series_1772235913667.png"
+                                alt="Keychron V Series custom classic keyboard">
                         </div>
                         <div class="product-info">
                             <span class="product-series">V Series</span>
                             <h3>Custom Classic</h3>
-                            <p>Translucent plastic casing, QMK/VIA support, and vibrant south-facing RGB.</p>
+                            <p>Translucent plastic casing, QMK/VIA support, and vibrant south-facing RGB lighting.</p>
                             <div class="product-price">
                                 <span class="price">From $79</span>
-                                <a href="#" class="btn btn-primary" style="padding: 0.5rem 1rem;">Shop</a>
+                                <button class="btn btn-primary btn-sm" data-product-id="v-series"
+                                    data-product-name="V Series Keyboard" data-product-price="79">Add to Cart</button>
                             </div>
                         </div>
                     </div>
@@ -237,14 +231,13 @@
             </div>
         </section>
 
-        <!-- 4.1 Comparison Table -->
+        <!-- COMPARISON TABLE SECTION -->
         <section class="comparison" id="comparison">
             <div class="container">
                 <div class="section-header fade-in-up">
                     <h2 class="section-title">Compare Series.</h2>
                     <p class="section-subtitle">Choose the board that fits your journey.</p>
                 </div>
-
                 <div class="comparison-table-wrapper fade-in-up">
                     <table class="comparison-table">
                         <thead>
@@ -282,9 +275,9 @@
                             </tr>
                             <tr>
                                 <td>Price Range</td>
-                                <td>$149 - $219</td>
-                                <td>$74 - $99</td>
-                                <td>$69 - $119</td>
+                                <td>$149 – $219</td>
+                                <td>$74 – $99</td>
+                                <td>$69 – $119</td>
                             </tr>
                         </tbody>
                     </table>
@@ -292,34 +285,34 @@
             </div>
         </section>
 
-        <!-- 5. Spotlight (Upgraded with Style Selector & Specs) -->
+        <!-- PRODUCT SPOTLIGHT SECTION -->
         <section class="spotlight" id="shop">
             <div class="container spotlight-content">
                 <div class="spotlight-img-wrapper fade-in-up">
-                    <img src="assets/keychron_hero_1772235866190.png" alt="Q1 Pro Layout" class="spotlight-img"
+                    <img src="assets/keychron_hero_1772235866190.png" alt="Q1 Pro keyboard layout" class="spotlight-img"
                         id="mainProductImg">
-
-                    <div class="style-selector">
-                        <button class="style-dot active" data-color="carbon" style="background: #1a1a1a;"
-                            title="Carbon Black"></button>
-                        <button class="style-dot" data-color="silver" style="background: #c0c0c0;"
-                            title="Silver Grey"></button>
+                    <div class="style-selector" role="group" aria-label="Color variant selector">
+                        <button class="style-dot active" data-color="carbon"
+                            data-img="assets/keychron_hero_1772235866190.png" style="background: #1a1a1a;"
+                            title="Carbon Black" aria-pressed="true"></button>
+                        <button class="style-dot" data-color="silver" data-img="assets/keychron_q1_silver.png"
+                            style="background: #c0c0c0;" title="Silver Grey" aria-pressed="false"></button>
                     </div>
                 </div>
-
                 <div class="spotlight-info fade-in-up" data-delay="0.2s">
-                    <span class="product-series" style="color: var(--color-accent); font-weight: bold;">Q1 Pro</span>
-                    <h2 id="productTitle">The quintessential 75% custom keyboard.</h2>
+                    <span class="product-series" style="color: var(--color-accent);">Q1 Pro</span>
+                    <h2>The quintessential 75% custom keyboard.</h2>
                     <p>Designed for the ultimate typing experience right out of the box, with hot-swappable switches, a
-                        CNC machined aluminum body, and double-gasket design.</p>
+                        CNC machined aluminum body, and a double-gasket design.</p>
 
+                    <!-- Accordion -->
                     <div class="accordion">
                         <div class="accordion-item">
-                            <div class="accordion-header">
+                            <button class="accordion-header" aria-expanded="false">
                                 <span>Key Features</span>
                                 <i data-lucide="chevron-down"></i>
-                            </div>
-                            <div class="accordion-content">
+                            </button>
+                            <div class="accordion-content" hidden>
                                 <ul class="specs-list">
                                     <li><i data-lucide="check-circle-2"></i> Hot-swappable K Pro mechanical switches
                                     </li>
@@ -329,11 +322,11 @@
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <div class="accordion-header">
+                            <button class="accordion-header" aria-expanded="false">
                                 <span>Technical Specifications</span>
                                 <i data-lucide="chevron-down"></i>
-                            </div>
-                            <div class="accordion-content">
+                            </button>
+                            <div class="accordion-content" hidden>
                                 <table class="specs-table">
                                     <tr>
                                         <td>Width</td>
@@ -360,15 +353,16 @@
                         </div>
                     </div>
 
-                    <div style="display: flex; align-items: center; gap: 2rem; margin-top: 2rem;">
-                        <span style="font-size: 2rem; font-weight: 700;">$219</span>
-                        <a href="#" class="btn btn-accent">Add to Cart</a>
+                    <div class="spotlight-cta">
+                        <span class="spotlight-price">$219</span>
+                        <button class="btn btn-accent" data-product-id="q1-pro" data-product-name="Q1 Pro"
+                            data-product-price="219">Add to Cart</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 5.1 Testimonials (Social Proof) -->
+        <!-- TESTIMONIALS SECTION -->
         <section class="testimonials" id="testimonials">
             <div class="container">
                 <div class="section-header fade-in-up">
@@ -381,7 +375,7 @@
                                 professional's desk. The Q1 Pro changed how I code."</p>
                         </div>
                         <div class="testimonial-author">
-                            <img src="https://i.pravatar.cc/150?u=techy" alt="User">
+                            <img src="https://i.pravatar.cc/100?u=techy" alt="Alex Rivera" width="50" height="50">
                             <div>
                                 <strong>Alex Rivera</strong>
                                 <span>Full Stack Developer</span>
@@ -391,10 +385,10 @@
                     <div class="testimonial-card fade-in-up" data-delay="0.1s">
                         <div class="testimonial-content">
                             <p>"Finally, a keyboard that supports Mac natively with such high-end features. The sound
-                                dampening is perfect."</p>
+                                dampening is absolutely perfect."</p>
                         </div>
                         <div class="testimonial-author">
-                            <img src="https://i.pravatar.cc/150?u=design" alt="User">
+                            <img src="https://i.pravatar.cc/100?u=design" alt="Sarah Chen" width="50" height="50">
                             <div>
                                 <strong>Sarah Chen</strong>
                                 <span>UI/UX Designer</span>
@@ -404,10 +398,10 @@
                     <div class="testimonial-card fade-in-up" data-delay="0.2s">
                         <div class="testimonial-content">
                             <p>"VIA support is a game changer. I've remapped everything for my workflow. Best investment
-                                in years."</p>
+                                in my entire setup."</p>
                         </div>
                         <div class="testimonial-author">
-                            <img src="https://i.pravatar.cc/150?u=gamer" alt="User">
+                            <img src="https://i.pravatar.cc/100?u=gamer" alt="Marcus Thorne" width="50" height="50">
                             <div>
                                 <strong>Marcus Thorne</strong>
                                 <span>Content Creator</span>
@@ -417,69 +411,87 @@
                 </div>
             </div>
         </section>
+
     </main>
 
-    <!-- 6. Footer -->
+    <!-- ===================== FOOTER ===================== -->
     <footer class="footer">
         <div class="container footer-grid">
             <div class="footer-brand">
-                <a href="#" class="logo">Keychron</a>
+                <a href="index.html" class="logo">Keychron</a>
                 <p>Building the most versatile custom mechanical keyboards for programmers, gamers, and typing
                     enthusiasts.</p>
                 <div class="socials">
-                    <a href="#"><i data-lucide="twitter"></i></a>
-                    <a href="#"><i data-lucide="instagram"></i></a>
-                    <a href="#"><i data-lucide="facebook"></i></a>
-                    <a href="#"><i data-lucide="youtube"></i></a>
+                    <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
                 </div>
             </div>
-
             <div class="footer-col">
                 <h4>Keyboards</h4>
                 <ul>
-                    <li><a href="#">Q Series (Custom Aluminum)</a></li>
-                    <li><a href="#">V Series (Custom Classic)</a></li>
-                    <li><a href="#">K Series (Wireless Mechanical)</a></li>
-                    <li><a href="#">K Pro Series</a></li>
+                    <li><a href="keyboards.html">Q Series (Custom Aluminum)</a></li>
+                    <li><a href="keyboards.html">V Series (Custom Classic)</a></li>
+                    <li><a href="keyboards.html">K Series (Wireless)</a></li>
+                    <li><a href="keyboards.html">K Pro Series</a></li>
                 </ul>
             </div>
-
             <div class="footer-col">
                 <h4>Accessories</h4>
                 <ul>
-                    <li><a href="#">Keycap Sets</a></li>
-                    <li><a href="#">Switches</a></li>
-                    <li><a href="#">Desk Mats</a></li>
-                    <li><a href="#">Cables & Cases</a></li>
+                    <li><a href="accessories.html">Keycap Sets</a></li>
+                    <li><a href="accessories.html">Switches</a></li>
+                    <li><a href="accessories.html">Desk Mats</a></li>
+                    <li><a href="accessories.html">Cables &amp; Cases</a></li>
                 </ul>
             </div>
-
             <div class="footer-col">
                 <h4>Support</h4>
                 <ul>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">Firmware Downloads</a></li>
-                    <li><a href="#">User Manuals</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="support.html">Help Center</a></li>
+                    <li><a href="support.html">Firmware Downloads</a></li>
+                    <li><a href="support.html">User Manuals</a></li>
+                    <li><a href="support.html">Contact Us</a></li>
                 </ul>
             </div>
         </div>
         <div class="container footer-bottom">
             <p>&copy; <span id="year"></span> Keychron. Developed for display purposes.</p>
-            <div style="display: flex; gap: 1rem;">
+            <div class="footer-legal">
                 <a href="#">Terms of Service</a>
                 <a href="#">Privacy Policy</a>
             </div>
         </div>
     </footer>
 
-    <!-- Initialize Icons -->
+    <!-- ===================== CART DRAWER ===================== -->
+    <div class="cart-overlay" id="cartOverlay" aria-hidden="true"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="cart-close-btn" id="cartCloseBtn" aria-label="Close cart">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items are injected here by JS -->
+        </div>
+        <div class="cart-footer" id="cartFooter" style="display:none;">
+            <div class="cart-subtotal">
+                <span>Subtotal</span>
+                <span id="cartSubtotal">$0</span>
+            </div>
+            <button class="btn btn-accent" style="width:100%;">Checkout</button>
+            <p class="cart-note">Shipping &amp; taxes calculated at checkout.</p>
+        </div>
+    </aside>
+
+    <!-- ===================== SCRIPTS ===================== -->
     <script>
         lucide.createIcons();
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
-
-    <!-- Custom Logic -->
     <script src="script.js"></script>
 </body>
 

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop the full Keychron keyboard lineup — Q Series, K Series, V Series and more.">
+    <title>Keychron | Shop Keyboards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Keychron</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="keyboards.html" class="nav-link">Keyboards</a></li>
+                <li><a href="index.html#features" class="nav-link">Features</a></li>
+                <li><a href="accessories.html" class="nav-link">Accessories</a></li>
+                <li><a href="support.html" class="nav-link">Support</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-icon-btn" id="cartBtn" aria-label="Open cart">
+                    <i data-lucide="shopping-bag"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- PAGE HERO -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="fade-in-up">All Keyboards.</h1>
+                <p class="fade-in-up" data-delay="0.1s">Find the perfect board for your workflow, budget, and aesthetic.
+                </p>
+            </div>
+        </section>
+
+        <!-- KEYBOARDS GRID -->
+        <section class="page-section">
+            <div class="container">
+                <!-- Filter Bar -->
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="q-series">Q Series</button>
+                    <button class="filter-btn" data-filter="k-series">K Series</button>
+                    <button class="filter-btn" data-filter="v-series">V Series</button>
+                </div>
+
+                <div class="product-grid">
+
+                    <!-- Q1 Pro -->
+                    <div class="product-card fade-in-up" data-series="q-series">
+                        <div class="product-image-wrap">
+                            <img src="assets/keychron_q_series_1772235887134.png" alt="Keychron Q1 Pro 75% keyboard">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-series">Q Series</span>
+                            <h3>Q1 Pro — 75%</h3>
+                            <p>Full CNC aluminum, double-gasket, hot-swappable, QMK/VIA, Bluetooth 5.1.</p>
+                            <div class="product-price">
+                                <span class="price">$219</span>
+                                <button class="btn btn-primary btn-sm" data-product-id="q1-pro"
+                                    data-product-name="Q1 Pro — 75%" data-product-price="219">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Q2 Pro -->
+                    <div class="product-card fade-in-up" data-delay="0.05s" data-series="q-series">
+                        <div class="product-image-wrap">
+                            <img src="assets/keychron_q_series_1772235887134.png" alt="Keychron Q2 Pro 65% keyboard">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-series">Q Series</span>
+                            <h3>Q2 Pro — 65%</h3>
+                            <p>Compact 65% layout with all the Q series flagship features and wireless.</p>
+                            <div class="product-price">
+                                <span class="price">$199</span>
+                                <button class="btn btn-primary btn-sm" data-product-id="q2-pro"
+                                    data-product-name="Q2 Pro — 65%" data-product-price="199">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Q3 Pro -->
+                    <div class="product-card fade-in-up" data-delay="0.1s" data-series="q-series">
+                        <div class="product-image-wrap">
+                            <img src="assets/keychron_q_series_1772235887134.png" alt="Keychron Q3 Pro TKL keyboard">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-series">Q Series</span>
+                            <h3>Q3 Pro — TKL</h3>
+                            <p>Tenkeyless layout with a dedicated function row and full navigation cluster.</p>
+                            <div class="product-price">
+                                <span class="price">$229</span>
+                                <button class="btn btn-primary btn-sm" data-product-id="q3-pro"
+                                    data-product-name="Q3 Pro — TKL" data-product-price="229">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- K3 Pro -->
+                    <div class="product-card fade-in-up" data-delay="0.05s" data-series="k-series">
+                        <div class="product-image-wrap">
+                            <img src="assets/keychron_k_series_1772235900566.png"
+                                alt="Keychron K3 Pro low-profile keyboard">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-series">K Series Low Profile</span>
+                            <h3>K3 Pro — 75% LP</h3>
+                            <p>Ultra-slim 75% low profile with QMK/VIA support. Perfect for Mac users.</p>
+                            <div class="product-price">
+                                <span class="price">$109</span>
+                                <button class="btn btn-primary btn-sm" data-product-id="k3-pro"
+                                    data-product-name="K3 Pro — 75% LP" data-product-price="109">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- K8 Pro -->
+                    <div class="product-card fade-in-up" data-delay="0.1s" data-series="k-series">
+                        <div class="product-image-wrap">
+                            <img src="assets/keychron_k_series_1772235900566.png" alt="Keychron K8 Pro TKL keyboard">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-series">K Series</span>
+                            <h3>K8 Pro — TKL</h3>
+                            <p>Full-size TKL with wireless and hot-swap at a mid-range price point.</p>
+                            <div class="product-price">
+                                <span class="price">$99</span>
+                                <button class="btn btn-primary btn-sm" data-product-id="k8-pro"
+                                    data-product-name="K8 Pro — TKL" data-product-price="99">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- V1 -->
+                    <div class="product-card fade-in-up" data-delay="0.05s" data-series="v-series">
+                        <div class="product-image-wrap">
+                            <img src="assets/keychron_v_series_1772235913667.png" alt="Keychron V1 75% keyboard">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-series">V Series</span>
+                            <h3>V1 — 75%</h3>
+                            <p>Translucent case, south-facing RGB, QMK/VIA, at an accessible price.</p>
+                            <div class="product-price">
+                                <span class="price">$79</span>
+                                <button class="btn btn-primary btn-sm" data-product-id="v1" data-product-name="V1 — 75%"
+                                    data-product-price="79">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Keychron</a>
+                <p>Building the most versatile custom mechanical keyboards for programmers, gamers, and enthusiasts.</p>
+                <div class="socials">
+                    <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Keyboards</h4>
+                <ul>
+                    <li><a href="keyboards.html">Q Series</a></li>
+                    <li><a href="keyboards.html">V Series</a></li>
+                    <li><a href="keyboards.html">K Series</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Accessories</h4>
+                <ul>
+                    <li><a href="accessories.html">Keycap Sets</a></li>
+                    <li><a href="accessories.html">Switches</a></li>
+                    <li><a href="accessories.html">Desk Mats</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="support.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span id="year"></span> Keychron. Developed for display purposes.</p>
+            <div class="footer-legal">
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CART DRAWER -->
+    <div class="cart-overlay" id="cartOverlay" aria-hidden="true"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="cart-close-btn" id="cartCloseBtn" aria-label="Close cart"><i data-lucide="x"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer" id="cartFooter" style="display:none;">
+            <div class="cart-subtotal"><span>Subtotal</span><span id="cartSubtotal">$0</span></div>
+            <button class="btn btn-accent" style="width:100%;">Checkout</button>
+            <p class="cart-note">Shipping &amp; taxes calculated at checkout.</p>
+        </div>
+    </aside>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
