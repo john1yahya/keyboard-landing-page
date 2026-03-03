@@ -123,22 +123,49 @@ function initScrollReveal() {
     const elements = $$('.fade-in-up');
     if (!elements.length) return;
 
-    // Apply staggered delay from data-delay attribute
-    elements.forEach(el => {
-        const delay = el.dataset.delay;
-        if (delay) el.style.transitionDelay = delay;
-    });
-
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Only animate once
+                const el = entry.target;
+                const delay = el.dataset.delay || '0s';
+                el.style.transitionDelay = delay;
+                el.classList.add('visible');
+                observer.unobserve(el);
             }
         });
-    }, { threshold: 0.1 });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    });
 
     elements.forEach(el => observer.observe(el));
+}
+
+function initTestimonialGallery() {
+    const grid = $('#testimonialGrid');
+    const prevBtn = $('.gallery-prev');
+    const nextBtn = $('.gallery-next');
+    if (!grid || !prevBtn || !nextBtn) return;
+
+    const scrollAmount = 350;
+
+    prevBtn.addEventListener('click', () => {
+        grid.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+
+    nextBtn.addEventListener('click', () => {
+        grid.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+
+    // Optional: Hide buttons if not scrollable (advanced polish)
+    const updateNavStyles = () => {
+        prevBtn.style.opacity = grid.scrollLeft <= 5 ? '0.5' : '1';
+        nextBtn.style.opacity = grid.scrollLeft + grid.offsetWidth >= grid.scrollWidth - 5 ? '0.5' : '1';
+    };
+
+    grid.addEventListener('scroll', updateNavStyles);
+    window.addEventListener('resize', updateNavStyles);
+    updateNavStyles();
 }
 
 
@@ -604,4 +631,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initFilterBar();
     initFaq();
     initContactForm();
+    initTestimonialGallery();
 });
