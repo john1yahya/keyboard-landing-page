@@ -157,8 +157,8 @@
 }
 
 /* Dark mode: mobile nav menu */
-[data-theme="dark"] .nav-links {
-    background: var(--color-surface);
+[data-theme="dark"] .faq-question  {
+    color: var(--color-text-muted);
 }
 
 /* Smooth colour transition — scoped to html/body only.
