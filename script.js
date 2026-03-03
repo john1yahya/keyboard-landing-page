@@ -2,6 +2,7 @@
  * script.js — Keychron Landing Page
  *
  * Sections:
+ *   0. Dark mode — theme toggle (runs immediately)
  *   1. Initialisation helpers
  *   2. Navigation (header hide/show, mobile menu)
  *   3. Scroll-reveal animations
@@ -17,6 +18,47 @@
  */
 
 'use strict';
+
+/* -----------------------------------------------------------------------
+   0. DARK MODE — THEME TOGGLE
+   Applies the saved theme immediately (before DOMContentLoaded) to
+   prevent a flash of the wrong theme on page load.
+   ----------------------------------------------------------------------- */
+
+(function applyThemeEarly() {
+    const saved = localStorage.getItem('keychron_theme');
+    if (saved === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+})();
+
+/**
+ * Initialise the dark-mode toggle button.
+ * Reads the current theme from the <html> element (already set above),
+ * syncs the button state, and wires the click event.
+ */
+function initThemeToggle() {
+    const btn = document.getElementById('themeToggleBtn');
+    if (!btn) return;
+
+    function setTheme(isDark) {
+        if (isDark) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('keychron_theme', 'dark');
+        } else {
+            document.documentElement.removeAttribute('data-theme');
+            localStorage.setItem('keychron_theme', 'light');
+        }
+        // Re-render Lucide icons so moon/sun swap is instant
+        lucide.createIcons();
+    }
+
+    btn.addEventListener('click', () => {
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        setTheme(!isDark);
+    });
+}
+
 
 /* -----------------------------------------------------------------------
    1. INITIALISATION HELPERS
@@ -552,6 +594,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('year') &&
         (document.getElementById('year').textContent = new Date().getFullYear());
 
+    initThemeToggle();
     initNavigation();
     initScrollReveal();
     initSoundTest();
